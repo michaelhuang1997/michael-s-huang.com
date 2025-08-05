@@ -91,7 +91,7 @@
             
 <p class="header pt-5">Research</p>
 
-<div class="paper">
+<div class="research-item">
   <p><b>Working Paper:</b> Trust Matters: The Impact of Aid on Parliamentary Incumbent Reelection in Pakistan</p>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
   <div class="abstract">
@@ -99,7 +99,7 @@
   </div>
 </div>
 
-<div class="paper">
+<div class="research-item">
   <p><b>Working Paper (with Jung Mun Park):</b> Does Religious Identity Shape How People See Democratic Backsliding?</p>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
   <div class="abstract">
@@ -107,7 +107,7 @@
   </div>
 </div>
 
-<div class="paper">
+<div class="research-item">
   <p><b>Working Paper (with Tianhong Yin):</b> Predicting Repeated Disputes: Resolved Statements in Persistent Conflicts</p>
   <button class="abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
   <div class="abstract">
@@ -116,8 +116,16 @@
 </div>
 
 <style>
-  .paper {
+  .research-item {
+    border-left: 2px solid #e0e0e0;
+    padding-left: 1rem;
     margin-bottom: 1.8rem;
+  }
+
+  .research-item p {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: #212529;
   }
 
   .abstract {
@@ -129,8 +137,8 @@
 
   .abstract-toggle {
     font-family: inherit;
-    font-size: 1rem;
-    color: #b30000; /* red like your superlink text */
+    font-size: 0.95rem;
+    color: #b30000; /* red to match View link */
     background: none;
     border: none;
     padding: 0;
@@ -150,6 +158,7 @@
     button.textContent = isVisible ? 'Show Abstract' : 'Hide Abstract';
   }
 </script>
+
 
 
               <p class="header pt-5">Other Work</p>
