@@ -112,26 +112,69 @@
                     </table>
                 </div>
 
-                <p class="header pt-5">Work in Progress</p>
-                <div style="height:250px;overflow:auto;">
-                    <table>
-                        <col width="100px">
-                        <tr>
-                            <td><b>Working Paper:</b></td>
-                            <td>Selecting a Friend or Sanctioning a Foe: The Impact of Chinese Aid on Parliamentary Incumbent Reelection in Pakistan</td>
-                        </tr>
-                        <tr>
-                            <td><b>Working Paper (with Jung Mun Park):</b></td>
-                            <td>Does Religious Identity Shape How People See Democratic Backsliding?</td>
-                        </tr>
-                        <tr>
-                            <td><b>Working Paper (with Tianhong Yin):</b></td>
-                            <td>Predicting Repeated Disputes: Resolved Statements in Persistent Conflicts</td>
-                        </tr>
-                        </table>
-                </div>
+                <p class="header pt-5">Research</p>
+<div style="height:250px; overflow:auto;">
+  
+  <div class="paper">
+    <p><b>Working Paper:</b> Trust Matters: The Impact of Aid on Parliamentary Incumbent Reelection in Pakistan</p>
+    <button class="abstract-button" onclick="toggleAbstract(this)">Show Abstract</button>
+    <div class="abstract">
+      This paper examines how foreign aid from different donors affects the reelection chances of incumbents in Pakistan, emphasizing the role of public trust in the donor.
+    </div>
+  </div>
 
-                <p class="header pt-5">Non-Peer Reviewed Publications</p>
+  <div class="paper">
+    <p><b>Working Paper (with Jung Mun Park):</b> Does Religious Identity Shape How People See Democratic Backsliding?</p>
+    <button class="abstract-button" onclick="toggleAbstract(this)">Show Abstract</button>
+    <div class="abstract">
+      We explore whether religious identity influences public perception of democratic erosion, focusing on attitudes toward institutional capture and authoritarian leadership.
+    </div>
+  </div>
+
+  <div class="paper">
+    <p><b>Working Paper (with Tianhong Yin):</b> Predicting Repeated Disputes: Resolved Statements in Persistent Conflicts</p>
+    <button class="abstract-button" onclick="toggleAbstract(this)">Show Abstract</button>
+    <div class="abstract">
+      Using the UN General Debate Corpus, this study investigates whether conciliatory language from warring parties predicts long-term post-conflict stability.
+    </div>
+  </div>
+
+</div>
+
+<style>
+  .paper {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  .abstract-button {
+    margin-top: 5px;
+    cursor: pointer;
+    color: #0077cc;
+    background: none;
+    border: none;
+    font-size: 0.95em;
+    padding: 0;
+  }
+
+  .abstract {
+    display: none;
+    margin-top: 5px;
+    font-style: italic;
+    color: #444;
+  }
+</style>
+
+<script>
+  function toggleAbstract(button) {
+    const abstract = button.nextElementSibling;
+    const isVisible = abstract.style.display === 'block';
+    abstract.style.display = isVisible ? 'none' : 'block';
+    button.textContent = isVisible ? 'Show Abstract' : 'Hide Abstract';
+  }
+</script>
+
+                <p class="header pt-5">Other Work</p>
                 <div class="py-2">
                     <p class="paper my-2 pl-2">
                         <span class="papertitle">The Making of the World of Espionage: 
