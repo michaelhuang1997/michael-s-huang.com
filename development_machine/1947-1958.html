@@ -11,51 +11,32 @@
     gtag('config', 'G-Q759EBKEQ5');
   </script>
 
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="International Development & Foreign Aid in Pakistan, 1947–1958">
   <meta name="author" content="Michael Huang">
   <meta name="theme-color" content="#222222">
 
+  <!-- Bootstrap + site CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style-2.css">
-  <title>International Development in Pakistan (1947–1958) — Michael Huang</title>
+
+  <title>The Development Machine — Pakistan (1947–1958)</title>
 
   <style>
-    .paper h3 { margin-top: 1.75rem; }
-    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .smallcaps { font-variant-caps: small-caps; }
-    .note { background: #fffbe6; border-left: 4px solid #ffe58f; padding: .75rem 1rem; border-radius: 4px; }
-    /* Sticky mini-TOC (right side within content column) */
-    .mini-toc {
-      position: sticky;
-      top: 80px;
-      max-height: calc(100vh - 100px);
-      overflow: auto;
-      border-left: 1px dashed #ddd;
-      padding-left: 1rem;
-      margin-left: 1rem;
-    }
-    .mini-toc a { display: block; margin: .25rem 0; font-size: .95rem; }
-    /* Inline citation chips */
-    .cite-chip {
-      display: inline-block; padding: 0 .35rem; border-radius: .35rem;
-      background: #f1f3f5; border: 1px solid #e5e7eb; font-size: .8rem; line-height: 1.4;
-      cursor: pointer; text-decoration: none; color: inherit;
-    }
-    .cite-chip:focus, .cite-chip:hover { background: #eef2ff; }
-    /* Collapsible references box */
-    .refs-box { background: #fafafa; border: 1px solid #eee; border-radius: 6px; }
-    .ref-item { border-top: 1px dashed #e5e7eb; }
-    .ref-item:first-child { border-top: 0; }
+    /* Keep additions minimal to match site look */
+    .ref-toggle { font-size: 0.95rem; }
+    .ref-list .card { border: 0; border-top: 1px dashed #e5e7eb; border-radius: 0; }
+    .ref-list .card:first-child { border-top: 0; }
   </style>
 </head>
 
 <body>
   <div class="container pt-5 allstuffp">
     <div class="row pt-5 allstuff">
-      <!-- LEFT SIDEBAR -->
+      <!-- Left sidebar: identical to template -->
       <div class="col-md-4 pt-3">
         <div class="fixed-posi">
           <style>.small-text { font-size: 20px !important; padding-right: 20px; }</style>
@@ -63,232 +44,72 @@
           <p class="name small-text" lang="ur">پھر ملیں گے اگر خدا لایا - میر تقی میر</p>
           <img src="assets/profile.png" width="30%" height="30%" class="profilepic pt-1 pb-2">
           <div class="pt-5 menur"><a class="menulink" href="index.html">← back to main</a></div>
-          <div><a class="menulink" target="_blank" href="assets/cv_may24.pdf">curriculum vitae</a></div>
-          <div><a class="menulink" target="_blank" href="https://github.com/michaelhuang1997">github profile</a></div>
-          <div><a class="menulink" target="_blank" href="https://huggingface.co/MichaelHuang">hugging face</a></div>
-          <div><a class="menulink" target="_blank" href="https://www.linkedin.com/in/shuyan-michael-huang-2200a512a/">linkedin</a></div>
-          <div><a class="menulink" target="_blank" href="https://michaelhuangshuyan.wixsite.com/website/portfolio">gallery</a></div>
-          <div><a class="menulink" target="_blank" href="https://michaelhuangshuyan.wixsite.com/website/blog">blog</a></div>
+          <div class=""><a class="menulink" target="_blank" href="assets/cv_may24.pdf">curriculum vitae</a></div>
+          <div class=""><a class="menulink" target="_blank" href="https://github.com/michaelhuang1997">github profile</a></div>
+          <div class=""><a class="menulink" target="_blank" href="https://huggingface.co/MichaelHuang">hugging face</a></div>
+          <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/shuyan-michael-huang-2200a512a/">linkedin</a></div>
+          <div class=""><a class="menulink" target="_blank" href="https://michaelhuangshuyan.wixsite.com/website/portfolio">gallery</a></div>
+          <div class=""><a class="menulink" target="_blank" href="https://michaelhuangshuyan.wixsite.com/website/blog">blog</a></div>
         </div>
       </div>
 
-      <!-- MAIN CONTENT + MINI-TOC -->
+      <!-- Main content: keep same structure/classes as template -->
       <div class="col-md-8 pt-3 about">
-        <div class="d-flex">
-          <div class="flex-grow-1 pr-lg-4">
-            <h2 class="header pb-3">International Development & Foreign Aid in Pakistan (1947–1958)</h2>
-            <div class="note mb-3">
-              <strong>Scope.</strong> Independence to the eve of Ayub Khan’s coup (Aug 1947–Oct 1958). Focus on donors, instruments, motivations, and key data points.
-            </div>
+        <h2 class="header pb-3">The Development Machine: Pakistan (1947–1958)</h2>
 
-            <div class="paper">
-              <h3 id="sec-background">1. Background: A New State’s Constraints (1947–1953)</h3>
-              <p>
-                Partition left Pakistan with a narrow industrial base, severe refugee resettlement needs, and thin fiscal capacity.
-                Early aid arrived via <span class="smallcaps">Commonwealth</span> ties and multilaterals. Pakistan joined the <em>Colombo Plan</em> (1951),
-                received technical assistance from UK/Canada/Australia, and entered the World Bank/IMF (1950).
-                The World Bank’s first loan—<strong>$27.2m</strong> for Pakistan Railways (1952)—supported locomotives and track rehabilitation
-                <a class="cite-chip" data-toggle="collapse" href="#ref-1" role="button" aria-expanded="false" aria-controls="ref-1">[1]</a>.
-                U.S. engagement began with Truman’s Point Four technical aid and 1953 emergency wheat
-                <a class="cite-chip" data-toggle="collapse" href="#ref-2">[2]</a>.
-              </p>
+        <p><strong>Scope</strong></p>
+        <p>
+          Independence to the eve of Ayub Khan’s coup (Aug 1947–Oct 1958). Focus on donors, instruments, motivations, and key data points.
+        </p>
 
-              <h3 id="sec-alignment">2. Alignment & Aid Surge (1954–1958)</h3>
-              <p>
-                Pakistan’s 1954 Mutual Defense Assistance Agreement with the U.S., plus entry into
-                <span class="smallcaps">SEATO</span> (1954) and <span class="smallcaps">Baghdad Pact/CENTO</span> (1955), triggered a sharp rise in U.S. economic (grants/loans, PL-480)
-                and military aid (tanks, aircraft, MAAG, training)
-                <a class="cite-chip" data-toggle="collapse" href="#ref-3">[3]</a>.
-                Historical compilations place late-1950s U.S. commitments around <strong>$2.5bn economic</strong> and <strong>$0.7bn military</strong> (nominal)
-                <a class="cite-chip" data-toggle="collapse" href="#ref-4">[4]</a>.
-                The UK complemented with Commonwealth training/TA; Canada financed the Warsak Dam under Colombo Plan auspices
-                <a class="cite-chip" data-toggle="collapse" href="#ref-5">[5]</a>.
-                The World Bank expanded lending to power (Karachi Electric), industry (Karnaphuli Paper), ports, and a second railways loan of <strong>$31m</strong> (1957),
-                totaling <strong>$110m+</strong> by 1958
-                <a class="cite-chip" data-toggle="collapse" href="#ref-6">[6]</a>.
-                The Bank also chaired Indus Waters negotiations from 1952, paving the way for the 1960 treaty
-                <a class="cite-chip" data-toggle="collapse" href="#ref-7">[7]</a>.
-              </p>
+        <p><strong>1. Background: A New State’s Constraints (1947–1953)</strong></p>
+        <p>
+          Partition left Pakistan with a narrow industrial base, severe refugee resettlement needs, and thin fiscal capacity.
+          Early support came through the <em>Colombo Plan</em> (1951) from UK/Canada/Australia and via entry into the World Bank/IMF (1950).
+          The World Bank’s first loan—<b>$27.2m</b> for Pakistan Railways in 1952—financed locomotives and track rehabilitation
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-1">[1]</a>.
+          U.S. involvement started with Point Four technical assistance and 1953 emergency wheat shipments
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-2">[2]</a>.
+        </p>
 
-              <h3 id="sec-donors">3. Donors & Instruments</h3>
-              <ul>
-                <li><strong>United States.</strong> Development grants/loans, PL-480 food, FX support; substantial military aid & training tied to alliance politics
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-3">[3]</a>
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-4">[4]</a>.
-                </li>
-                <li><strong>United Kingdom & Commonwealth.</strong> Colombo Plan TA; officer training (e.g., Sandhurst) and advisory roles; project support incl. Warsak
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-5">[5]</a>.
-                </li>
-                <li><strong>World Bank (IBRD).</strong> Railways, power, port, industry lending; Indus Basin mediation and donor coordination groundwork
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-6">[6]</a>
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-7">[7]</a>.
-                </li>
-                <li><strong>Other bilaterals.</strong> Australia/New Zealand/Canada experts & scholarships; West Germany and others joined coordination by late-1950s
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-5">[5]</a>.
-                </li>
-              </ul>
+        <p><strong>2. Alignment & Aid Surge (1954–1958)</strong></p>
+        <p>
+          After the 1954 Mutual Defense Assistance Agreement and Pakistan’s entry into <em>SEATO</em> (1954) and the <em>Baghdad Pact/CENTO</em> (1955),
+          U.S. economic (grants/loans, PL-480) and military aid (tanks, aircraft, MAAG, training) rose sharply
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-3">[3]</a>.
+          Late-1950s U.S. commitments are commonly summarized as ≈ <b>$2.5bn economic</b> and <b>$0.7bn military</b> (nominal)
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-4">[4]</a>.
+          The UK provided Commonwealth training/technical assistance; Canada financed Warsak Dam (late-1950s) under the Colombo Plan
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-5">[5]</a>.
+          The World Bank expanded lending—power (KESC), industry (Karnaphuli Paper), ports—and a second railways loan of <b>$31m</b> (1957),
+          with cumulative 1952–1958 lending of <b>$110m+</b>
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-6">[6]</a>.
+          It also chaired Indus Waters negotiations from 1952, paving the way for the 1960 treaty
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-7">[7]</a>.
+        </p>
 
-              <h3 id="sec-motivations">4. Motivations</h3>
-              <p>
-                Aid was embedded in Cold War strategy—Pakistan’s “Northern Tier” location, India rivalry, and base access considerations
-                shaped U.S./UK policy; multilaterals emphasized productivity and infrastructure while facilitating regional dispute resolution
-                <a class="cite-chip" data-toggle="collapse" href="#ref-3">[3]</a>
-                <a class="cite-chip" data-toggle="collapse" href="#ref-7">[7]</a>.
-              </p>
+        <p><strong>3. Donors & Instruments</strong></p>
+        <ul>
+          <li><b>United States.</b> Development grants/loans, PL-480 food, FX support; substantial military aid & training tied to alliance politics
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-3">[3]</a>
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-4">[4]</a>.
+          </li>
+          <li><b>United Kingdom & Commonwealth.</b> Colombo Plan TA; officer training (e.g., Sandhurst); advisory roles; projects incl. Warsak
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-5">[5]</a>.
+          </li>
+          <li><b>World Bank (IBRD).</b> Railways, power, port, industry lending; Indus Basin mediation and donor coordination groundwork
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-6">[6]</a>
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-7">[7]</a>.
+          </li>
+          <li><b>Other bilaterals.</b> Australia/New Zealand/Canada experts & scholarships; West Germany joined coordination by late-1950s
+            <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-5">[5]</a>.
+          </li>
+        </ul>
 
-              <h3 id="sec-outcomes">5. Outcomes by 1958</h3>
-              <ul>
-                <li><strong>State capacity & infrastructure.</strong> Rail rehabilitation, urban power expansion, port improvements, and early large-dam pipelines
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-6">[6]</a>.
-                </li>
-                <li><strong>Macroeconomy.</strong> Economic aid ≈ 2–3% of GDP in mid-1950s, easing BoP and enabling First Five-Year Plan
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-4">[4]</a>.
-                </li>
-                <li><strong>Civil–military balance.</strong> Military assistance professionalized and equipped the forces, elevating political weight pre-1958 coup
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-3">[3]</a>.
-                </li>
-              </ul>
+        <p><strong>4. Motivations</strong></p>
+        <p>
+          Aid was embedded in Cold War strategy—Pakistan’s “Northern Tier” position, India rivalry, and base access shaped U.S./UK policy.
+          Multilaterals emphasized productivity and infrastructure while facilitating dispute resolution
+          <a class="in-text ref-toggle" data-toggle="collapse" href="#ref-3">[3]</a>
+          <a class="in-text ref-toggle" data
 
-              <h3 id="sec-data">Selected Data Points (indicative)</h3>
-              <ul>
-                <li>IBRD loans to Pakistan, 1952–1958: <strong>$110m+</strong> (railways, power, port, industry)
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-6">[6]</a>.
-                </li>
-                <li>U.S. commitments (late-1950s): ≈ <strong>$2.5bn economic</strong> + <strong>$0.7bn military</strong> (nominal aggregates)
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-4">[4]</a>.
-                </li>
-                <li>PL-480 wheat shipments begin mid-1950s; 1953 emergency wheat assistance
-                  <a class="cite-chip" data-toggle="collapse" href="#ref-2">[2]</a>.
-                </li>
-              </ul>
-
-              <!-- Collapsible References -->
-              <div class="mt-4 refs-box">
-                <div class="p-3">
-                  <strong>References</strong> <span class="text-muted">(click any citation chip above to expand)</span>
-                </div>
-
-                <div id="ref-1" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[1]</span>
-                    World Bank (IBRD) press releases & archives on Pakistan Railways loan (1952, $27.2m) and subsequent lending.
-                    Links:
-                    <a target="_blank" href="https://www.worldbank.org/">World Bank</a>,
-                    <a target="_blank" href="https://documents.worldbank.org/">WB Documents</a>.
-                  </div>
-                </div>
-
-                <div id="ref-2" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[2]</span>
-                    U.S. Point Four Program materials; 1953 emergency wheat assistance (PL-480 precursors/food aid).
-                    Links:
-                    <a target="_blank" href="https://history.state.gov/historicaldocuments">FRUS (State Dept.)</a>,
-                    <a target="_blank" href="https://www.usaid.gov/who-we-are/usaid-history">USAID History</a>.
-                  </div>
-                </div>
-
-                <div id="ref-3" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[3]</span>
-                    U.S.–Pakistan Mutual Defense Assistance (1954), MAAG, training; SEATO/CENTO entries.
-                    Links:
-                    <a target="_blank" href="https://history.state.gov/historicaldocuments">FRUS</a>,
-                    <a target="_blank" href="https://avalon.law.yale.edu/subject_menus/20th.asp">Yale Avalon</a>.
-                  </div>
-                </div>
-
-                <div id="ref-4" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[4]</span>
-                    Historical U.S. aid series (economic & military), incl. 1950s surge.
-                    Links:
-                    <a target="_blank" href="https://www.usaspending.gov">USASpending</a>,
-                    <a target="_blank" href="https://www.cgdev.org">CGD</a>,
-                    <a target="_blank" href="https://www.theguardian.com/global-development/datablog/2011/jul/11/us-aid-pakistan-data">Guardian dataset article</a>.
-                  </div>
-                </div>
-
-                <div id="ref-5" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[5]</span>
-                    Colombo Plan, UK/Commonwealth technical assistance and officer training; Canada’s Warsak Dam.
-                    Links:
-                    <a target="_blank" href="https://www.colombo-plan.org/">Colombo Plan</a>,
-                    <a target="_blank" href="https://rusi.org/">RUSI</a>,
-                    <a target="_blank" href="https://www.international.gc.ca/">Global Affairs Canada</a>.
-                  </div>
-                </div>
-
-                <div id="ref-6" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[6]</span>
-                    World Bank lending to power (KESC), ports, industry; second Railways loan (1957, $31m); cumulative $110m+ by 1958.
-                    Links:
-                    <a target="_blank" href="https://documents.worldbank.org/">WB Documents</a>,
-                    <a target="_blank" href="https://projects.worldbank.org/en/projects-operations">WB Projects</a>.
-                  </div>
-                </div>
-
-                <div id="ref-7" class="collapse ref-item">
-                  <div class="p-3">
-                    <span class="kbd">[7]</span>
-                    World Bank mediation of the Indus Waters dispute (1952–1960) leading to the 1960 Treaty.
-                    Links:
-                    <a target="_blank" href="https://www.worldbank.org/en/region/sar/brief/indus-waters-treaty">WB Indus Waters highlight</a>,
-                    <a target="_blank" href="https://treaties.un.org/">UN Treaty Collection</a>.
-                  </div>
-                </div>
-              </div>
-
-              <div class="py-3"><em>Contact:</em> <mark>shuyanh2@illinois.edu</mark></div>
-            </div>
-          </div>
-
-          <!-- Sticky mini-TOC (hidden on small screens) -->
-          <aside class="mini-toc d-none d-lg-block">
-            <div class="text-muted mb-2" style="font-weight:600;">On this page</div>
-            <a href="#sec-background">1. Background (1947–1953)</a>
-            <a href="#sec-alignment">2. Alignment & Aid Surge</a>
-            <a href="#sec-donors">3. Donors & Instruments</a>
-            <a href="#sec-motivations">4. Motivations</a>
-            <a href="#sec-outcomes">5. Outcomes by 1958</a>
-            <a href="#sec-data">Selected Data Points</a>
-            <a href="#ref-1" data-toggle="collapse" aria-expanded="false" aria-controls="ref-1">References</a>
-          </aside>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="text-center medium mt-5"><a href="https://github.com/SebastinSanty/minimal-research-theme">Website template</a></div>
-    <br>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iBJVoKGExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <!-- Smooth-scroll for anchor links (optional) -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) {
-          e.preventDefault();
-          const isCollapse = target.classList.contains('collapse');
-          if (isCollapse) $(target).collapse('toggle');
-          window.scrollTo({ top: target.getBoundingClientRect().top + window.pageYOffset - 70, behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-</body>
-</html>
